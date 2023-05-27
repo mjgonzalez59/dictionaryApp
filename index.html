@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">Dictionary App</h1>
+      <div class="input">
+        <input
+          type="text"
+          class="search-field"
+          placeholder="Type and press enter"
+          onkeypress="handle(event)"
+        />
+      </div>
+      <div class="result">
+        <h1 id="word">Hello</h1>
+        <p class="phonetics">həˈləʊ</p>
+        <audio
+          src="//ssl.gstatic.com/dictionary/static/sounds/20200429/hello--_gb_1.mp3"
+          id="pronunciation"
+          controls
+        ></audio>
+        <p class="wordmeaning">Meaning</p>
+        <p class="word-definition">
+          used as a greeting or to begin a phone conversation.
+        </p>
+        <p class="wordmeaning">Synonyms</p>
+        <div class="synonyms">
+          <!-- Will be add with JS -->
+          <p class="pills">Synonym1</p>
+          <p class="pills">Syn</p>
+          <p class="pills">Synony</p>
+          <p class="pills">Synonym4</p>
+          <p class="pills">nym5</p>
+          <p class="pills">Synonym6</p>
+          <p class="pills">Synm7</p>
+          <p class="pills">Synonym8</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
