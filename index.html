@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary App</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="#">
   </head>
   <body>
     <div class="container">
       <h1 class="h1">Dictionary App</h1>
+      <h4 class="h4">Type a word and press enter</h4>
       <div class="input">
         <input
           type="text"
@@ -19,28 +21,27 @@
         />
       </div>
       <div class="result">
-        <h1 id="word">Hello</h1>
-        <p class="phonetics">həˈləʊ</p>
+        <h1 id="word"></h1>
+        <p class="phonetics"></p>
+        <!-- src="https://api.dictionaryapi.dev/media/pronunciations/en/dictionary-uk.mp3" -->
         <audio
-          src="//ssl.gstatic.com/dictionary/static/sounds/20200429/hello--_gb_1.mp3"
+          src=""
           id="pronunciation"
           controls
         ></audio>
-        <p class="wordmeaning">Meaning</p>
-        <p class="word-definition">
-          used as a greeting or to begin a phone conversation.
-        </p>
-        <p class="wordmeaning">Synonyms</p>
+        <p class="wordmeaning type-title">Type</p>
+        <div id="word-type">
+          <!-- Will be added with JS -->
+        </div>
+        <div class="word-definition" >
+          <p class="wordmeaning meaning-title">Meaning</p>
+          <ol id="word-meaning">
+            <!-- Will be added with JS -->
+          </ol>
+        </div>
+        <p class="wordmeaning synonym-title">Synonyms</p>
         <div class="synonyms">
-          <!-- Will be add with JS -->
-          <p class="pills">Synonym1</p>
-          <p class="pills">Syn</p>
-          <p class="pills">Synony</p>
-          <p class="pills">Synonym4</p>
-          <p class="pills">nym5</p>
-          <p class="pills">Synonym6</p>
-          <p class="pills">Synm7</p>
-          <p class="pills">Synonym8</p>
+          <!-- Will be added with JS -->
         </div>
       </div>
     </div>
